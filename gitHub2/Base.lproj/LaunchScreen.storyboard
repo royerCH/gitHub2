@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,54 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuC-rO-R0h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1Inicio1" translatesAutoresizingMaskIntoConstraints="NO" id="6Y9-pJ-jpY">
+                                        <rect key="frame" x="87" y="110" width="240" height="300"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by FAMEX 2023." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-80-pc9">
+                                        <rect key="frame" x="87" y="562" width="240" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9iO-80-pc9" secondAttribute="bottom" constant="313" id="6oO-l3-TVc"/>
+                                    <constraint firstItem="6Y9-pJ-jpY" firstAttribute="leading" secondItem="FuC-rO-R0h" secondAttribute="leading" constant="87" id="CYu-iB-SG1"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Y9-pJ-jpY" secondAttribute="bottom" constant="486" id="W23-GX-3zl"/>
+                                    <constraint firstItem="6Y9-pJ-jpY" firstAttribute="top" secondItem="FuC-rO-R0h" secondAttribute="top" constant="110" id="YHp-4W-gI5"/>
+                                    <constraint firstItem="9iO-80-pc9" firstAttribute="leading" secondItem="FuC-rO-R0h" secondAttribute="leading" constant="87" id="abg-ZK-nY9"/>
+                                    <constraint firstAttribute="trailing" secondItem="9iO-80-pc9" secondAttribute="trailing" constant="87" id="mRF-9d-odt"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Y9-pJ-jpY" secondAttribute="trailing" constant="87" id="pmE-d4-dm1"/>
+                                    <constraint firstItem="9iO-80-pc9" firstAttribute="top" secondItem="6Y9-pJ-jpY" secondAttribute="bottom" constant="152" id="xHH-fW-qvJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FuC-rO-R0h" secondAttribute="bottom" constant="-34" id="5RX-S4-1tJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FuC-rO-R0h" secondAttribute="trailing" id="OUF-47-LDF"/>
+                            <constraint firstItem="FuC-rO-R0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rj5-4W-1dB"/>
+                            <constraint firstItem="FuC-rO-R0h" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="n0R-tq-rXQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1Inicio1" width="1080" height="1350"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
